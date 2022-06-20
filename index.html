@@ -16,6 +16,12 @@
 				}
 				document.getElementById('count').innerHTML = count;
 			 };
+			window.ontouchdown = function(){
+				poppw(1);
+			}
+			window.ontouchup = function(){
+					poppw(0);
+			};
 			window.onmousedown = function(){
 				poppw(1);
 			}
