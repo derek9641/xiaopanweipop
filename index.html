@@ -20,7 +20,8 @@
 				poppw(1);
 			}
 			window.ontouchend = function(){
-					poppw(0);
+				poppw(0);
+				event.preventDefault();
 			};
 			window.onmousedown = function(){
 				poppw(1);
