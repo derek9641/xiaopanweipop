@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+		<script type="text/javascript">
+			var count = 0;
+			function poppw(id) {
+				var audio = new Audio('pop.mp3');
+				if(id == 1){
+					document.body.style.backgroundImage = "url(poppw1.jpg)";
+					audio.play();
+				} else{
+					document.body.style.backgroundImage = "url(poppw.jpg)";
+					count++;
+				}
+				document.getElementById('count').innerHTML = count;
+			 };
+		</script>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			body {
+				background-image: url(poppw.jpg);
+	    		background-repeat: no-repeat;
+	    		background-size: contain;
+	    		background-position: bottom;
+	    		overflow: hidden;
+	    	}
+	    	#count {
+	    		position: fixed;
+			    text-align: center;
+			    left: 0;
+			    right: 0;
+			    margin-left: auto;
+			    margin-right: auto;
+			    bottom: 20px;
+			    -webkit-touch-callout: none; /* iOS Safari */
+			    -webkit-user-select: none; /* Safari */
+			     -khtml-user-select: none; /* Konqueror HTML */
+			       -moz-user-select: none; /* Old versions of Firefox */
+			        -ms-user-select: none; /* Internet Explorer/Edge */
+			            user-select: none; /* Non-prefixed version, currently
+			                                  supported by Chrome, Edge, Opera and Firefox */
+			    color: white;
+  				text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  				font-size: 60px;
+	    	}
+	    	#title {
+	    		position: fixed;
+			    text-align: center;
+			    left: 0;
+			    right: 0;
+			    margin-left: auto;
+			    margin-right: auto;
+			    -webkit-touch-callout: none; /* iOS Safari */
+			    -webkit-user-select: none; /* Safari */
+			     -khtml-user-select: none; /* Konqueror HTML */
+			       -moz-user-select: none; /* Old versions of Firefox */
+			        -ms-user-select: none; /* Internet Explorer/Edge */
+			            user-select: none; /* Non-prefixed version, currently
+			                                  supported by Chrome, Edge, Opera and Firefox */
+			    color: white;
+  				text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  				font-size: 80px;
+	    	}
+		</style>
+	</head>
+	<body onmousedown='poppw(1)' onmouseup='poppw(0)' >
+		<h1 id='title'>POP小潘玮</h1>
+		<h1 id='count'>0</h1>
+	</body>
+</html>
