@@ -27,6 +27,7 @@
 			} else {
 				var count = 0;
 			}
+			document.getElementById('count').innerHTML = count;
 			function poppw(id) {
 				var audio = new Audio('pop.mp3');
 				if(id == 1){
@@ -115,6 +116,6 @@
 	</head>
 	<body>
 		<h1 id='title'>小POP玮</h1>
-		<h1 id='count'>0</h1>
+		<h1 id='count'></h1>
 	</body>
 </html>
