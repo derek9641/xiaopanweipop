@@ -9,7 +9,7 @@
 			  const parts = value.split(`; ${name}=`);
 			  if (parts.length === 2) return parts.pop().split(';').shift();
 			}
-			var count = getCookie("count");
+			var count = parseInt(getCookie("count"));
 			function poppw(id) {
 				var audio = new Audio('pop.mp3');
 				if(id == 1){
